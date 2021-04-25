@@ -37,7 +37,7 @@ class DouYinLogic extends Base
 
     public function setContents()
     {
-        $contents = $this->get('https://www.iesdouyin.com/web/api/v2/aweme/iteminfo', [
+        $contents = $this->get('https://www.iesdouyin.com/web/api/v2/aweme/iteminfo/', [
             'item_ids' => $this->itemId,
         ], [
             'User-Agent' => UserGentType::ANDROID_USER_AGENT,
